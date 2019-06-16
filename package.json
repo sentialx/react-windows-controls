@@ -1,0 +1,32 @@
+{
+  "name": "react-windows-controls",
+  "version": "1.0.0",
+  "description": "Windows title bar control buttons for React",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sentialx/react-windows-controls.git"
+  },
+  "keywords": [
+    "windows",
+    "react",
+    "control-buttons",
+    "titlebar"
+  ],
+  "author": "sentialx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sentialx/react-windows-controls/issues"
+  },
+  "homepage": "https://github.com/sentialx/react-windows-controls#readme",
+  "devDependencies": {
+    "@types/react": "16.8.20",
+    "react": "16.8.6",
+    "typescript": "3.5.2"
+  }
+}
