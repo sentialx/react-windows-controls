@@ -17,6 +17,10 @@ interface State {
 }
 
 export class WindowsControl extends React.PureComponent<Props, State> {
+  state = {
+    hover: false,
+  };
+
   onMouseEnter = () => {
     this.setState({ hover: true });
   };
@@ -38,6 +42,8 @@ export class WindowsControl extends React.PureComponent<Props, State> {
     return (
       <div
         onClick={onClick}
+        onMouseEnter={this.onMouseEnter}
+        onMouseLeave={this.onMouseLeave}
         style={{
           height: '100%',
           width: 45,

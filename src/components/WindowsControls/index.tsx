@@ -8,7 +8,7 @@ interface Props {
   onMinimize?: (e: React.MouseEvent<HTMLDivElement>) => void;
 }
 
-export const WindowsButtons = ({
+export const WindowsControls = ({
   dark,
   onClose,
   onMaximize,
