@@ -1,8 +1,8 @@
-import * as React from "react";
+import * as React from 'react';
 
-import closeIcon from "../../icons/close.svg";
-import maximizeIcon from "../../icons/maximize.svg";
-import minimizeIcon from "../../icons/minimize.svg";
+import closeIcon from '../../icons/close.svg';
+import maximizeIcon from '../../icons/maximize.svg';
+import minimizeIcon from '../../icons/minimize.svg';
 
 interface Props {
   maximize?: boolean;
@@ -39,29 +39,29 @@ export class WindowsControl extends React.PureComponent<Props, State> {
       <div
         onClick={onClick}
         style={{
-          height: "100%",
+          height: '100%',
           width: 45,
           minWidth: 45,
-          position: "relative",
-          transition: "0.2s background-color",
-          "-webkit-app-region": "no-drag",
+          position: 'relative',
+          transition: '0.2s background-color',
+          '-webkit-app-region': 'no-drag',
           backgroundColor: hover
             ? !close
-              ? "rgba(196, 196, 196, 0.4)"
-              : "#e81123"
-            : "transparent"
+              ? 'rgba(196, 196, 196, 0.4)'
+              : '#e81123'
+            : 'transparent',
         }}
       >
         <div
           style={{
-            width: "100%",
-            height: "100%",
-            transition: "0.2s filter",
-            filter: whiteIcon || (close && hover) ? "invert(100%)" : "none",
-            backgroundPosition: "center",
-            backgroundSize: "11px",
-            backgroundRepeat: "no-repeat",
-            backgroundImage: `url(${icon})`
+            width: '100%',
+            height: '100%',
+            transition: '0.2s filter',
+            filter: whiteIcon || (close && hover) ? 'invert(100%)' : 'none',
+            backgroundPosition: 'center',
+            backgroundSize: '11px',
+            backgroundRepeat: 'no-repeat',
+            backgroundImage: `url(${icon})`,
           }}
         />
       </div>

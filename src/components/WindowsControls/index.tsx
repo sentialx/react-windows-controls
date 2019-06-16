@@ -1,5 +1,5 @@
-import * as React from "react";
-import { WindowsControl } from "../WindowsControl";
+import * as React from 'react';
+import { WindowsControl } from '../WindowsControl';
 
 interface Props {
   dark?: boolean;
@@ -12,10 +12,10 @@ export const WindowsButtons = ({
   dark,
   onClose,
   onMaximize,
-  onMinimize
+  onMinimize,
 }: Props) => {
   return (
-    <div style={{ display: "flex" }}>
+    <div style={{ display: 'flex' }}>
       <WindowsControl minimize whiteIcon={dark} onClick={onMinimize} />
       <WindowsControl maximize whiteIcon={dark} onClick={onMaximize} />
       <WindowsControl close whiteIcon={dark} onClick={onClose} />
