@@ -44,7 +44,6 @@ export class WindowsControl extends React.PureComponent<Props, State> {
           minWidth: 45,
           position: 'relative',
           transition: '0.2s background-color',
-          '-webkit-app-region': 'no-drag',
           backgroundColor: hover
             ? !close
               ? 'rgba(196, 196, 196, 0.4)'
