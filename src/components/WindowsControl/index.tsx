@@ -10,6 +10,7 @@ interface Props {
   minimize?: boolean;
   whiteIcon?: boolean;
   onClick?: (e: React.MouseEvent<HTMLDivElement>) => void;
+  style?: any;
 }
 
 interface State {
@@ -31,7 +32,7 @@ export class WindowsControl extends React.PureComponent<Props, State> {
 
   public render() {
     const { hover } = this.state;
-    const { close, maximize, minimize, whiteIcon, onClick } = this.props;
+    const { close, maximize, minimize, whiteIcon, onClick, style } = this.props;
 
     let icon: string;
 
@@ -55,6 +56,7 @@ export class WindowsControl extends React.PureComponent<Props, State> {
               ? 'rgba(196, 196, 196, 0.4)'
               : '#e81123'
             : 'transparent',
+          ...style,
         }}
       >
         <div
