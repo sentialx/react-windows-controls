@@ -6,6 +6,7 @@ interface Props {
   onClose?: (e: React.MouseEvent<HTMLDivElement>) => void;
   onMaximize?: (e: React.MouseEvent<HTMLDivElement>) => void;
   onMinimize?: (e: React.MouseEvent<HTMLDivElement>) => void;
+  onMouseUp?: (e: React.MouseEvent<HTMLDivElement>) => void;
   style?: any;
 }
 
@@ -14,10 +15,11 @@ export const WindowsControls = ({
   onClose,
   onMaximize,
   onMinimize,
-  style
+  onMouseUp,
+  style,
 }: Props) => {
   return (
-    <div style={{ display: 'flex', ...style }}>
+    <div onMouseUp={onMouseUp} style={{ display: 'flex', ...style }}>
       <WindowsControl minimize whiteIcon={dark} onClick={onMinimize} />
       <WindowsControl maximize whiteIcon={dark} onClick={onMaximize} />
       <WindowsControl close whiteIcon={dark} onClick={onClose} />
