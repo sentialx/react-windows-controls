@@ -3,8 +3,6 @@
   "version": "1.0.3",
   "description": "Windows title bar control buttons for React",
   "main": "build/index.js",
-  "ts:main": "src/index.ts",
-  "typings": "src/index.ts",
   "scripts": {
     "prepublishOnly": "npm run build",
     "watch": "webpack-cli --mode development --watch",
