@@ -13,6 +13,7 @@ interface Props {
   onMouseUp?: (e: React.MouseEvent<HTMLDivElement>) => void;
   onMouseDown?: (e: React.MouseEvent<HTMLDivElement>) => void;
   style?: any;
+  disabled?: boolean;
 }
 
 interface State {
@@ -34,7 +35,7 @@ export class WindowsControl extends React.PureComponent<Props, State> {
 
   public render() {
     const { hover } = this.state;
-    const { close, maximize, minimize, whiteIcon, onClick, style } = this.props;
+    const { close, maximize, minimize, whiteIcon, onClick, style, disabled } = this.props;
 
     let icon: string;
 
@@ -58,6 +59,7 @@ export class WindowsControl extends React.PureComponent<Props, State> {
               ? 'rgba(196, 196, 196, 0.4)'
               : '#e81123'
             : 'transparent',
+          pointerEvents: disabled ? 'none' : 'auto',
           ...style,
         }}
       >
@@ -71,6 +73,7 @@ export class WindowsControl extends React.PureComponent<Props, State> {
             backgroundSize: '11px',
             backgroundRepeat: 'no-repeat',
             backgroundImage: `url(${icon})`,
+            opacity: disabled ? 0.54 : 1,
           }}
         />
       </div>
