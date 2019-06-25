@@ -9,3 +9,12 @@ To install this package, just run
 $ npm install react-windows-controls
 ```
 
+# Quick example
+
+```typescript
+import { WindowsControls } from 'react-windows-controls';
+
+export default () => (
+  <WindowsControls />
+);
+```
