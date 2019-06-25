@@ -18,3 +18,26 @@ export default () => (
   <WindowsControls />
 );
 ```
+
+# Components
+
+## `<WindowsControls />`
+
+- `dark` boolean - whether to invert icons colors
+- `onClose` Function - on close button click event
+- `onMaximize` Function - on maximize button click event
+- `onMinimize` Function - on minimize button click event
+- `onMouseUp` Function
+- `onMouseDown` Function
+- `style` any
+
+## `<WindowsControl />`
+
+  - `maximize` boolean - whether the button is a maximize button
+  - `close` boolean - whether the button is a close button
+  - `minimize` boolean - whether the button is a minimize button
+  - `whiteIcon` boolean - whether to invert icon color
+  - `onClick` Function
+  - `onMouseUp` Function
+  - `onMouseDown` Function
+  - `style` any
