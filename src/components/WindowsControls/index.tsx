@@ -18,11 +18,12 @@ export const WindowsControls = ({
   onMinimize,
   onMouseUp,
   style,
+  isMaximized,
 }: Props) => {
   return (
     <div onMouseUp={onMouseUp} style={{ display: 'flex', ...style }}>
       <WindowsControl minimize whiteIcon={dark} onClick={onMinimize} />
-      <WindowsControl maximize whiteIcon={dark} onClick={onMaximize} />
+      <WindowsControl maximize={!isMaximized} restore={isMaximized} whiteIcon={dark} onClick={onMaximize} />
       <WindowsControl close whiteIcon={dark} onClick={onClose} />
     </div>
   );

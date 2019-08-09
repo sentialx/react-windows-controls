@@ -3,17 +3,20 @@ import * as React from 'react';
 import closeIcon from '../../icons/close.svg';
 import maximizeIcon from '../../icons/maximize.svg';
 import minimizeIcon from '../../icons/minimize.svg';
+import restoreIcon from '../../icons/restore.svg';
 
 interface Props {
   maximize?: boolean;
   close?: boolean;
   minimize?: boolean;
+  restore?: boolean;
   whiteIcon?: boolean;
   onClick?: (e: React.MouseEvent<HTMLDivElement>) => void;
   onMouseUp?: (e: React.MouseEvent<HTMLDivElement>) => void;
   onMouseDown?: (e: React.MouseEvent<HTMLDivElement>) => void;
   style?: any;
   disabled?: boolean;
+  restore?: boolean;
 }
 
 interface State {
@@ -35,13 +38,19 @@ export class WindowsControl extends React.PureComponent<Props, State> {
 
   public render() {
     const { hover } = this.state;
-    const { close, maximize, minimize, whiteIcon, onClick, style, disabled } = this.props;
+    const { close, maximize, minimize, restore, whiteIcon, onClick, style, disabled, isMaximized } = this.props;
 
     let icon: string;
 
     if (close) icon = closeIcon;
-    else if (maximize) icon = maximizeIcon;
     else if (minimize) icon = minimizeIcon;
+    
+    if(maximize == true) {
+        icon = maximizeIcon
+    }
+    if(restore == true) {
+        icon = restoreIcon
+    }
 
     return (
       <div
