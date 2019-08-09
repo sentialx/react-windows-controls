@@ -1,3 +1,5 @@
+const INCLUDE = resolve(__dirname, 'src');
+
 module.exports = {
   entry: './src/index.ts',
   output: {
@@ -15,16 +17,12 @@ module.exports = {
 
   module: {
     rules: [
-      { test: /\.(tsx|ts)$/i, loader: 'awesome-typescript-loader' },
+      { test: /\.(tsx|ts)$/i, use: ['ts-loader'], include: INCLUDE },
       {
         test: /\.(png|jpg|gif|svg)$/i,
+        include: INCLUDE,
         use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: 8192,
-            },
-          },
+          'file-loader'
         ],
       },
     ],
