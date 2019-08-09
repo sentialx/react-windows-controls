@@ -9,6 +9,7 @@ interface Props {
   onMouseUp?: (e: React.MouseEvent<HTMLDivElement>) => void;
   onMouseDown?: (e: React.MouseEvent<HTMLDivElement>) => void;
   style?: any;
+  isMaximized?: boolean;
 }
 
 export const WindowsControls = ({
@@ -18,11 +19,13 @@ export const WindowsControls = ({
   onMinimize,
   onMouseUp,
   style,
+  isMaximized,
 }: Props) => {
   return (
     <div onMouseUp={onMouseUp} style={{ display: 'flex', ...style }}>
       <WindowsControl minimize whiteIcon={dark} onClick={onMinimize} />
-      <WindowsControl maximize whiteIcon={dark} onClick={onMaximize} />
+      <WindowsControl maximize isMaximized={isMaximized} whiteIcon={dark} onClick={onMaximize} />
+      <WindowsControl restore isMaximized={isMaximized} whiteIcon={dark} onClick={onMaximize} />
       <WindowsControl close whiteIcon={dark} onClick={onClose} />
     </div>
   );
