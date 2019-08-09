@@ -9,7 +9,8 @@ interface Props {
   onMouseUp?: (e: React.MouseEvent<HTMLDivElement>) => void;
   onMouseDown?: (e: React.MouseEvent<HTMLDivElement>) => void;
   style?: any;
-}
+  isMaximized?: boolean;
+};
 
 export const WindowsControls = ({
   dark,

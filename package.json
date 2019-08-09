@@ -7,7 +7,7 @@
   "scripts": {
     "prepublishOnly": "npm run build",
     "watch": "webpack-cli --mode development --watch",
-    "build": "webpack-cli"
+    "build": "webpack-cli --mode production"
   },
   "repository": {
     "type": "git",

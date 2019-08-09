@@ -16,7 +16,6 @@ interface Props {
   onMouseDown?: (e: React.MouseEvent<HTMLDivElement>) => void;
   style?: any;
   disabled?: boolean;
-  restore?: boolean;
 }
 
 interface State {
@@ -38,7 +37,7 @@ export class WindowsControl extends React.PureComponent<Props, State> {
 
   public render() {
     const { hover } = this.state;
-    const { close, maximize, minimize, restore, whiteIcon, onClick, style, disabled, isMaximized } = this.props;
+    const { close, maximize, minimize, restore, whiteIcon, onClick, style, disabled } = this.props;
 
     let icon: string;
 

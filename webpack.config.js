@@ -1,3 +1,5 @@
+const { resolve } = require('path');
+
 const INCLUDE = resolve(__dirname, 'src');
 
 module.exports = {
