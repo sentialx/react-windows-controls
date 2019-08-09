@@ -16,6 +16,7 @@ interface Props {
   onMouseDown?: (e: React.MouseEvent<HTMLDivElement>) => void;
   style?: any;
   disabled?: boolean;
+  restore?: boolean;
 }
 
 interface State {
@@ -42,9 +43,14 @@ export class WindowsControl extends React.PureComponent<Props, State> {
     let icon: string;
 
     if (close) icon = closeIcon;
-    else if (maximize) icon = maximizeIcon;
     else if (minimize) icon = minimizeIcon;
-    else if (restore) icon = restoreIcon;
+    
+    if(maximize == true) {
+        icon = maximizeIcon
+    }
+    if(restore == true) {
+        icon = restoreIcon
+    }
 
     return (
       <div
