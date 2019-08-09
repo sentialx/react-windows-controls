@@ -16,7 +16,6 @@ interface Props {
   onMouseDown?: (e: React.MouseEvent<HTMLDivElement>) => void;
   style?: any;
   disabled?: boolean;
-  isMaximized?: boolean;
 }
 
 interface State {
@@ -64,7 +63,6 @@ export class WindowsControl extends React.PureComponent<Props, State> {
               : '#e81123'
             : 'transparent',
           pointerEvents: disabled ? 'none' : 'auto',
-          display: isMaximized ? 'none' : 'auto'
           ...style,
         }}
       >
