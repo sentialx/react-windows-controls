@@ -26,15 +26,12 @@
   },
   "homepage": "https://github.com/sentialx/react-windows-controls#readme",
   "devDependencies": {
-    "@types/react": "16.8.23",
-    "cross-env": "5.2.0",
+    "@types/react": "16.9.0",
     "file-loader": "^4.2.0",
-    "react": "16.8.6",
-    "terser": "4.1.2",
+    "react": "16.9.0",
     "ts-loader": "^6.0.4",
-    "tslint-config-airbnb": "5.11.1",
     "typescript": "3.5.3",
-    "webpack": "4.38.0",
+    "webpack": "4.39.1",
     "webpack-cli": "^3.3.6"
   },
   "files": [
