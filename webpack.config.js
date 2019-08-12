@@ -24,7 +24,7 @@ module.exports = {
         test: /\.(png|jpg|gif|svg)$/i,
         include: INCLUDE,
         use: [
-          'file-loader'
+          'url-loader'
         ],
       },
     ],
