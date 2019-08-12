@@ -1,6 +1,6 @@
 {
   "name": "react-windows-controls",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Windows title bar control buttons for React",
   "main": "build/index.js",
   "types": "build/index.d.ts",
