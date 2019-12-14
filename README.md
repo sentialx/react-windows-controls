@@ -11,6 +11,8 @@ $ npm install react-windows-controls
 
 # Quick example
 
+![image](https://user-images.githubusercontent.com/11065386/62898576-1cd3f200-bd56-11e9-8dea-ac78a3531c02.png)
+
 ```tsx
 import { remote } from 'electron';
 import { WindowsControls } from 'react-windows-controls';
