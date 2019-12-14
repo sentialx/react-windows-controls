@@ -24,7 +24,12 @@ module.exports = {
         test: /\.(png|jpg|gif|svg)$/i,
         include: INCLUDE,
         use: [
-          'url-loader'
+          {
+            loader: 'url-loader',
+            options: {
+              esModule: false,
+            },
+          }
         ],
       },
     ],
