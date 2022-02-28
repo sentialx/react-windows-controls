@@ -14,7 +14,7 @@ interface Props {
   onClick?: (e: React.MouseEvent<HTMLDivElement>) => void;
   onMouseUp?: (e: React.MouseEvent<HTMLDivElement>) => void;
   onMouseDown?: (e: React.MouseEvent<HTMLDivElement>) => void;
-  style?: any;
+  style?: React.CSSProperties;
   disabled?: boolean;
 }
 
