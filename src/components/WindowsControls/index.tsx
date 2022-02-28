@@ -8,7 +8,7 @@ interface Props {
   onMinimize?: (e: React.MouseEvent<HTMLDivElement>) => void;
   onMouseUp?: (e: React.MouseEvent<HTMLDivElement>) => void;
   onMouseDown?: (e: React.MouseEvent<HTMLDivElement>) => void;
-  style?: any;
+  style?: React.CSSProperties;
   isMaximized?: boolean;
 };
 

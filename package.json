@@ -26,19 +26,19 @@
   },
   "homepage": "https://github.com/sentialx/react-windows-controls#readme",
   "devDependencies": {
-    "@types/react": "16.9.16",
-    "@typescript-eslint/eslint-plugin": "^2.11.0",
-    "@typescript-eslint/parser": "^2.11.0",
-    "eslint": "^6.7.2",
-    "eslint-config-prettier": "^6.7.0",
-    "eslint-plugin-prettier": "^3.1.1",
+    "@types/react": "^17.0.39",
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "@typescript-eslint/parser": "^5.12.1",
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.17.0",
-    "react": "16.12.0",
-    "ts-loader": "^6.2.1",
-    "typescript": "3.7.3",
-    "url-loader": "^3.0.0",
-    "webpack": "4.41.2",
-    "webpack-cli": "^3.3.10"
+    "react": "^17.0.2",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.5",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
   },
   "files": [
     "build"
